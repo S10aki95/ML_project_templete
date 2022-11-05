@@ -1,0 +1,8 @@
+defaults:
+  - _self_
+  - preprocessing: pattern_1
+  - model: lightgbm_regression
+
+hydra:
+  run:
+    dir: ./data/outputs/${now:%Y-%m-%d}/${now:%H-%M-%S}
